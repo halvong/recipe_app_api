@@ -16,3 +16,4 @@ raven
 django-taggit
 social-auth-app-django
 sorl-thumbnail
+flake8>=3.6.0,<3.7.0
