@@ -1,6 +1,7 @@
 Django API, Udemy
-3/11, Monday
+3/25, Monday
 
+Create Core app
 
 docker-compose exec database psql -U postgres -h database
 #steps
@@ -16,3 +17,5 @@ docker-compose exec database psql -U postgres -h database
 10. exec(open('script.py').read())
 11. docker-compose stop web
     docker-compose up --build -d web
+12. docker-compose exec web python manage.py test && flake8 
+13. docker-compose run web sh -c "python manage.py test && flake8"
