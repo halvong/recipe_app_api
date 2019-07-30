@@ -15,11 +15,6 @@ services:
     build: .
     command: >
       sh -c "python manage.py runserver 0.0.0.0:8000"
-    #command: >
-    #  gunicorn -b 0.0.0.0:8000
-    #    --access-logfile -
-    #    --reload
-    #    wisdompets.wsgi:application
     volumes:
       - .:/usr/src/app
     ports:
